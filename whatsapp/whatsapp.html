@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: purple;
+        }
+        .chat-container{
+            max-width: 400px;
+            height: 600px;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            font-weight: 5px;
+        }
+        .chat-header{
+            background-color: bisque;
+            color:rgb(65, 31, 65);
+            padding: 10px;
+            font-size: 15px;
+            text-align: center;
+        }
+        .chat-messages{
+            flex-grow: 2;
+            /* padding: 10px; */
+            /* overflow-y: auto; */
+            width: 100%;
+        }
+        .message{
+            margin-bottom: 10px;
+            max-width: 80%;
+            padding: 8px;
+            border-radius: 8px;
+            color: #fff;
+        }
+        .msg.sent{
+            background-color:darkgrey;
+            color: #333;
+            align-self: flex-start;
+            text-align: right;
+            box-sizing: border-box;
+            padding: 2px;
+            height: 25px;
+            margin: 10px;
+        }
+        .msg.received{
+            background-color:darkcyan;
+            align-self: flex-start;
+            text-align: left;
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 2px;
+            height: 25px;
+        }
+        .chat-input input{
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            outline: none;
+            width: 80%;
+        }
+        .chat-input button{
+            background-color: #075e54;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            margin-left: 10px;
+            border-radius: 50%;
+            cursor: pointer; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            As a chat (06/11/2024)
+        </div>
+        <div class="chat-messages">
+          <div class="msg sent">Hi.How are you?</div>
+          <div class="msg received">Fine.You?</div>
+          <div class="msg sent">Fine.had lunch?</div>
+          <div class="msg received">yaa.you</div>
+          <div class="msg sent">yes I had</div>
+          <div class="msg received">Ok I"ll call you later</div>
+          <div class="msg sent">ok</div>
+
+
+        </div>
+        <div class="chat-input"><input type="text" placeholder="Type a msg"><button>&#9658</button></div>
+    </div>
+</body>
+</html>
